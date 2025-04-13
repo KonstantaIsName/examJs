@@ -11,7 +11,7 @@
       padding: 20px;
       margin: 20px;
       border-radius: 10px;
-      box-shadow: 2px 2px 6px #ccc;
+      box-shadow: 2px 2px 6px #07483b01;
     }
 
     .wide-button {
@@ -24,20 +24,23 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+
     }
 
     .posts-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Враховується у calc() */
+
+
     }
 
     .post-card {
-      width: calc(20% - 15px);
+        box-sizing: border-box;
+      width: calc(20% - 20px);
       background-color: #fff3e0;
       padding: 10px;
-      border-radius: 10px;
+
       box-shadow: 2px 2px 6px #ccc;
     }
 

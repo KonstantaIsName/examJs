@@ -9,10 +9,13 @@
        display: flex;
        flex-direction: row;
        justify-content: center;
+       text-align: center;
         }
        
-        .users-grid {
-        
+        .users-grid {  min-width: 800px;
+          display: flex;
+  flex-direction: row;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,21 +25,36 @@
 }
 
 .user-card {
-  
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: calc(50% - 120px);
-  background-color: #e1f5fe;
+  min-width: 800px;
+  background-color: #67a5c1;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 2px 2px 6px #ccc;
+  box-shadow: 2px 2px 6px #7f6363;
 }
-
-.user-card a {
+.user-card p, a{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.user-card a {    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    text-align: center;
+    padding: 20px ;
+    width: calc(100% - 220px );
   display: inline-block;
   margin-top: 10px;
   font-weight: bold;
-  color: #0277bd;
+  color: #ffffff;
   text-decoration: none;
+  background-color: rgb(74, 55, 30);;
 }
+
 
     
       </style>
@@ -44,7 +62,7 @@
 </head>
 <body>   
    
-    <h1>Список користувачів</h1>
+
     <div id="users-container" class="users-grid"></div>
    
 </body>
