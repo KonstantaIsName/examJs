@@ -5,11 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Деталі користувача</title>
 </head>
+<style>
+    .user-details {
+      background-color: #e3f2fd;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px #ccc;
+    }
+
+    .wide-button {
+      display: block;
+      margin: 20px auto;
+      width: 90%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #90caf9;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .posts-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px;
+    }
+
+    .post-card {
+      width: calc(20% - 15px);
+      background-color: #fff3e0;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px #ccc;
+    }
+
+    .post-card a {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #d84315;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 30px auto;
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+    }
+  </style>
 <script src="js/user-details.js" ></script>
 <body>
-    <h1>Деталі користувача</h1>
-    <div id="user-details"></div>
-    <a href="index.html">Повернутися назад</a>
+    <div id="user-details" class="user-details"></div>
+  
+  <div id="posts-container" class="posts-grid"></div>
+  <a href="index.html" class="back-link">Повернутися назад</a>
 
   
 </body>
